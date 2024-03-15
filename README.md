@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# ERP System using React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Created a simplified interface for an ERP(Enterprise Resource
+Planning) system, designed to manage basic business operations efficiently
 
-## Available Scripts
+![image](https://github.com/dsa-2002/e-com/assets/133044607/36e3414f-20fd-43bc-8d92-761cc94b8bb8)
 
-In the project directory, you can run:
 
-### `npm start`
+### Tech Stack
+- HTML
+- CSS
+- Javascript
+- Material UI
+- React.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Features
+- Dashboard - It provides an overview of the system's features
+-  Products Management - Allows for the management of product(add,delete and update product) listings.
+-  Orders Management - Facilitates viewing and handling orders.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Getting Started
+  To get started with ERP System locally, follow these steps:
+ ### 1. Clone the Repository:
+  ```html
+   git clone https://github.com/dsa-2002/e-com.git
+   cd e-com
+  ```
+   This will create a local copy of the project on your machine.
 
-### `npm test`
+ ### 2.Install Package Dependencies:
+ To install dependencies navigate to e-com
+   ```html
+    cd e-com
+    npm install
+    npm start
+   ```
+   This will launch the client-side application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3.Access the Application:
+Open your web browser and access the application at http://localhost:3000. You can now explore with the ERP System
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Overview of Application ([Click here](erp-system-nu.vercel.app))
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ 
+### Dashboard
+   ![image](https://github.com/dsa-2002/e-com/assets/133044607/a85e6618-91ae-4dee-8078-0993dda87f3c)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Products Management
+ ![image](https://github.com/dsa-2002/e-com/assets/133044607/942b01b2-d945-4cd6-ae13-80a79b55bed3)
 
-### `npm run eject`
+### Add Product Page
+![image](https://github.com/dsa-2002/e-com/assets/133044607/f5cca160-2f3b-4346-a8bc-173c72940e3d)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Order Management
+![image](https://github.com/dsa-2002/e-com/assets/133044607/71fd6d14-41a0-4cb4-a4a8-214787f4f1b1)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
