@@ -40,6 +40,10 @@ Planning) system, designed to manage basic business operations efficiently
 Open your web browser and access the application at http://localhost:3000. You can now explore with the ERP System
 
 
+https://github.com/dsa-2002/e-com/assets/133044607/27725216-465c-44d7-95a6-de10dea2edcd
+
+
+
 ### Overview of Application ([Click here](erp-system-nu.vercel.app))
 
  
