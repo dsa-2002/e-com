@@ -101,7 +101,6 @@ import Fab from "@mui/material/Fab";
 import Tooltip from "@mui/material/Tooltip";
 import ProductCard from "./ProductCard";
 import productData from "./data";
-// import AddProduct from "./AddProduct.jsx";
 import "./Product.css";
 const Product = () => {
   const [product, setProduct] = useState([]);
@@ -129,7 +128,7 @@ const Product = () => {
   };
 
   const handleEditProduct= (productId)=>{
-    // navigate(`/addProduct/${productId}`)
+    navigate(`/editProduct/${productId}`)
   }
   return (
     <div>

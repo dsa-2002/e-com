@@ -4,7 +4,7 @@ import { Button, Hidden, Paper } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import "./AddProduct.css";
-import productData, { updateProductData } from "./data";
+import { updateProductData } from "./data";
 
 const AddProduct = () => {
   const navigate = useNavigate();
@@ -14,18 +14,41 @@ const AddProduct = () => {
     stock: 0,
     price: 0,
   });
-
+    const [errors,setErrors] = useState({});
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewProduct({ ...newProduct, [name]: value });
   };
 
+  const validateForm = ()=>{
+    const errors={};
+    if (!newProduct.Name.trim()) {
+      errors.Name = "Name is required";
+    }else if (typeof newProduct.Name !== 'string') {
+      errors.Name = "Name must be a string";
+    }
+    if (!newProduct.category.trim()) {
+      errors.category = "Category is required";
+    }else if (typeof newProduct.category !== 'string') {
+      errors.category = "Category must be a string";
+    }
+    if (newProduct.stock < 0) {
+      errors.stock = "Stock cannot be negative";
+    }
+    if (newProduct.price < 0) {
+      errors.price = "Price cannot be negative";
+    }
+    setErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
   const handleAddProduct = (event) => {
     event.preventDefault();
-    // productData.push(newProduct);
-    updateProductData(newProduct);
-    // console.log("newProduct clicked ", newProduct);
-    navigate('/products'); 
+    if (validateForm()) {
+      updateProductData(newProduct);
+      navigate("/products");
+    }
+   
 };
 
   return (
@@ -42,6 +65,8 @@ const AddProduct = () => {
               name="Name"
               value={newProduct.Name}
               onChange={handleInputChange}
+              error={!!errors.Name}
+              helperText={errors.stock}
             />
             <TextField
               required
@@ -51,6 +76,8 @@ const AddProduct = () => {
               name="category"
               value={newProduct.category}
               onChange={handleInputChange}
+              error={!!errors.category}
+              helperText={errors.stock}
             />
             <TextField
               required
@@ -61,6 +88,8 @@ const AddProduct = () => {
               type="number"
               value={newProduct.stock}
               onChange={handleInputChange}
+              error={!!errors.stock}
+              helperText={errors.stock}
             />
             <TextField
               className="text-field"
@@ -71,6 +100,8 @@ const AddProduct = () => {
               type="number"
               value={newProduct.price}
               onChange={handleInputChange}
+              error={!!errors.price}
+              helperText={errors.price}
             />
             <Stack className="Stack-center" direction="row" spacing={2}>
               <Button
@@ -96,5 +127,4 @@ const paperStyle = {
   borderRadius: 40,
   
 };
-// const TextFieldStyle = { margin: 7 };
 export default AddProduct;

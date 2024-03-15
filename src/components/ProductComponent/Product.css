@@ -6,8 +6,7 @@ body{
     display: flex;
     flex-direction: row;
     background-color: #FAF9F6;
-    /* justify-content: space-around; */
-    /* gap: 20px; */
+    
 }
 
 .add-product-button {
@@ -20,7 +19,6 @@ body{
     border-radius: 5px;
     cursor: pointer;
   
-    /* transition: transform 0.3s ease-in-out; */
   }
  
 
@@ -36,11 +34,9 @@ body{
     }
   }
 
-  /* Responsive styles for mobile */
 @media (max-width: 767px) {
   .product-list {
-    width: 100%; /* Full width on mobile */
-    /* margin: 10px 0; */
+    width: 100%;  
   }
   .product-item:hover {
     transform: scale(1.05);

@@ -25,7 +25,7 @@ const orderCard = ({orderId,customerName,price,orderDate,status,onDelete}) => {
 
 </Stack>
     </div>
-    // </div>
+    //   </div> 
   )
 }
 

@@ -3,22 +3,22 @@ import "./orders.css";
 import OrderCard from "./orderCard.jsx";
 import ordermockData from "./orderMockData.jsx";
 const Orders = () => {
-  let [order, setOrder] = useState();
+  let [order, setOrder] = useState([]);
 
   useEffect(() => {
     setOrder(ordermockData);
   }, []);
 
-  const handleDeleteOrder = (orderId) => {
-    console.log("order Id", orderId);
-    const updatedOrders = order.filter((o) => o.orderId !== orderId);
+  const handleDeleteOrder = (Id) => {
+    console.log("order Id", Id);
+    const updatedOrders = order.filter((o) => o.orderId !== Id);
     //  console.log("Updated orders",updatedOrders);
     setOrder(updatedOrders);
     console.log("orders ", order);
   };
   return (
     <div className="order-container">
-      {ordermockData.map((p) => (
+      {order.map((p) => (
         <OrderCard
         key={p.orderId}
           orderId={p.orderId}

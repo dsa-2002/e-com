@@ -24,9 +24,18 @@ let productData = [
 
   
 export const  updateProductData = (newProductData) => {
-  // productData = [...productData, ...newProductData];
   productData.push(newProductData);
   console.log(productData);
+};
+
+export const  updateEditProductData = (editedProductData) => {
+  const index = productData.findIndex(product => product.id === editedProductData.id);
+ 
+    console.log("index: ",index);
+  
+
+    productData[index] = { ...productData[index], ...editedProductData };
+  
 };
   export default productData;
   

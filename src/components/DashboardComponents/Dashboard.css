@@ -1,8 +1,7 @@
 body {
-  /* margin-top: 10px; */
+  
     margin: 0;
     padding: 0;
-    /* background-color: #1d2634; */
     color: #9e9ea4;
     font-family: 'Montserrat', sans-serif;
   }
@@ -41,7 +40,6 @@ body {
   }
   
   .header {
-    /* margin-top: 20px; */
     grid-area: header;
     height: 60px;
     display: flex;
