@@ -1,0 +1,40 @@
+
+.ordercard{
+    color: black;
+    text-align: left;
+    background-color: white;
+    width: 280px;
+    height: 300px;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    border-color: blue;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* display: flex; */
+    transition: transform .2s;
+    overflow: hidden;
+}
+ 
+
+.ordercard:hover{
+  -ms-transform: scale(1.1); 
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1); 
+}
+.order-container{
+   
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+@media (max-width:400px){
+  .order-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
